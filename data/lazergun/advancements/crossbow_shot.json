@@ -1,0 +1,11 @@
+{
+    "parent": "minecraft:adventure/ol_betsy",
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:shot_crossbow"
+      }
+    },
+    "rewards": {
+      "function": "lazergun:crossbow_rc"
+    }
+}
