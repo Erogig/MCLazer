@@ -1,0 +1,5 @@
+
+#Scoreboard declaration
+
+
+#Function calls

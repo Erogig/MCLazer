@@ -1,0 +1,6 @@
+[
+    {
+        "function": "minecraft:set_nbt",
+        "tag": "{Damage:0, ChargedProjectiles:[{id:\"minecraft:tipped_arrow\",Count:1b,tag:{CustomPotionEffects:[{Id:1,Amplifier:1b,Duration:1,ShowParticles:0b,ShowIcon:0b,Ambient:0b}]}}], Charged:1b}"
+    }
+]
