@@ -9,5 +9,3 @@ execute if entity @s[scores={ammo=4..}] run xp set @s 0 points
 execute as @a[nbt={SelectedItem:{id:"minecraft:crossbow", tag:{Charged:0b}}}] if entity @s[scores={ammo=0..}] run item modify entity @s weapon lazergun:reload_crossbow
 execute as @a[scores={ammo=0}] run scoreboard players set @s ammo -1
 
-
-#"{Damage:0, ChargedProjectiles:[{id:\"minecraft:arrow\", Count:1b}], Charged:1b}"
