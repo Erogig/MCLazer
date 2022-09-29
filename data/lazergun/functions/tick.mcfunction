@@ -1,1 +1,2 @@
 function lazergun:crossbow_rc
+execute as @a[nbt={SelectedItem:{id:"minecraft:crossbow",Count:1b}}] run execute at @s run execute as @e[type=arrow,distance=..5] run data merge entity @s[type=arrow] {NoGravity:1b}
