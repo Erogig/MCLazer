@@ -1,7 +1,7 @@
 
 #function calls
 function lazergun:crossbow_rdc
-execute as @a[scores={drop_crossbow=1..}] run function lazergun:crossbow_reloaddelay
+execute as @a[scores={drop_crossbow=1..}] run function lazergun:crossbow_reload_delay
 
 # reload stuff
 
