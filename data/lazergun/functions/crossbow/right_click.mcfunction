@@ -4,7 +4,7 @@ execute if score @s ammo matches 0.. run item modify entity @s weapon lazergun:r
 execute if score @s ammo matches 0 run scoreboard players set @s ammo -1
 
 #Do No-gravity On Arrows
+execute at @s run execute as @e[type=arrow,distance=..2] run data merge entity @s {NoGravity:1b}
 
-execute at @a[nbt={SelectedItem:{id:"minecraft:crossbow"}}] run execute as @e[type=arrow,distance=..2] run data merge entity @s {NoGravity:1b}
-say hello1
+#revoke advancement
 advancement revoke @s only lazergun:crossbow_shot
