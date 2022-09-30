@@ -5,6 +5,6 @@
       }
     },
     "rewards": {
-      "function": "lazergun:crossbow_rc"
+      "function": "lazergun:crossbow/right_click"
     }
 }
