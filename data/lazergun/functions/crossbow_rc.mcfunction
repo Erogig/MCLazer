@@ -6,13 +6,3 @@ execute as @a[scores={ammo=0}] run scoreboard players set @s ammo -1
 #Do No-gravity On Arrows
 
 execute at @a[nbt={SelectedItem:{id:"minecraft:crossbow"}}] run execute as @e[type=arrow,distance=..2] run data merge entity @s {NoGravity:1b}
-
-# reload on drop
-
-execute as @a run execute at @s if entity @e[distance=..2,type=item,nbt={Item:{id:"minecraft:crossbow",Count:1b,tag:{Charged:0b}}}] run execute unless score @s ammodelay matches 1.. run scoreboard players set @s ammodelay 80
-execute as @a run execute at @s if entity @e[distance=..2,type=item,nbt={Item:{id:"minecraft:crossbow",Count:1b,tag:{Charged:0b}}}] run item replace entity @s weapon.mainhand with minecraft:crossbow{Charged:0b} 1
-execute as @a run execute at @s if entity @e[distance=..2,type=item,nbt={Item:{id:"minecraft:crossbow",Count:1b,tag:{Charged:0b}}}] run kill @e[distance=..2,type=item,nbt={Item:{id:"minecraft:crossbow",Count:1b,tag:{Charged:0b}}}]
-
-# Reload countdown
-scoreboard players remove @a[scores={ammodelay=1..}] ammodelay 1
-execute as @a[scores={ammodelay=1}] run scoreboard players set @s ammo 5
