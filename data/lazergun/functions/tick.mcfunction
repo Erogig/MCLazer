@@ -1,6 +1,8 @@
 
 #function calls
 
+execute as @a[scores={drop_crossbow=1..}] run function lazergun:crossbow_reloaddelay
+
 # reload stuff
 
 
