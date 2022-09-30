@@ -1,5 +1,4 @@
 {
-    "parent": "minecraft:adventure/ol_betsy",
     "criteria": {
       "requirement": {
         "trigger": "minecraft:shot_crossbow"
