@@ -1,4 +1,4 @@
 
 
-scoreboard players set @a health 100
+scoreboard players set @a health 20
 
