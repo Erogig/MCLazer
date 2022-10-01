@@ -10,3 +10,8 @@ function lazergun:crossbow/ammo_handling
 
 
 kill @e[type=arrow, nbt={inGround:1b}]
+
+
+
+execute as @e[type=arrow] run execute store result score @s test1 run data get entity @s Motion[0] 1000
+execute as @e[type=arrow] run execute if score @s test1 matches -500..500 run kill @s

@@ -2,8 +2,7 @@
 
 execute if score @s ammo matches 0.. run scoreboard players remove @s ammo 1
 execute if score @s ammo matches 4.. run xp set @s 0 points
-execute if score @s ammo matches 0.. run clear @s crossbow
-execute if score @s ammo matches 0.. run item replace entity @s hotbar.0 with crossbow
+execute if score @s ammo matches -1.. run item replace entity @s hotbar.0 with crossbow
 execute if score @s ammo matches 0.. run item modify entity @s hotbar.0 lazergun:reload_crossbow
 execute if score @s ammo matches 0 run scoreboard players set @s ammo -1
 
