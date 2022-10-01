@@ -7,6 +7,6 @@
       }
     },
     "rewards": {
-      "function": "lazergun:crossbow/right_click"
+      "function": "mcl_lazergun:right_click"
     }
 }

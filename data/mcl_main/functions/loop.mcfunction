@@ -3,7 +3,7 @@
 #---------------function calls start ---------------#
 
 #ammo management
-function lazergun:crossbow/ammo_handling
+function mcl_lazergun:ammo_handling
 
 
 #---------------function calls end---------------#
