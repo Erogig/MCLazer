@@ -9,8 +9,9 @@ function mcl_lazergun:ammo_handling
 #---------------function calls end---------------#
 
 
-kill @e[type=arrow, nbt={inGround:1b}]
+effect give @a resistance 99999 3 true
 
+kill @e[type=arrow, nbt={inGround:1b}]
 
 
 execute as @e[type=arrow] run execute store result score @s arrowvel1 run data get entity @s Motion[0] 1000
