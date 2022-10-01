@@ -6,8 +6,10 @@ execute if score @s ammo matches 0.. run clear @s crossbow
 execute if score @s ammo matches 0.. run item replace entity @s hotbar.0 with crossbow
 execute if score @s ammo matches 0.. run item modify entity @s hotbar.0 lazergun:reload_crossbow
 execute if score @s ammo matches 0 run scoreboard players set @s ammo -1
-execute if score @s ammo matches -1 run function lazergun:crossbow/auto_reload
 
+
+#Auto Reload
+execute if score @s ammo matches -1 run execute unless score @s ammodelay matches 1.. run scoreboard players set @s ammodelay 80
 
 #Do No-gravity On Arrows
 execute at @s run execute as @e[type=arrow,distance=..2] run data merge entity @s {NoGravity:1b}
