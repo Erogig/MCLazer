@@ -9,7 +9,8 @@ function mcl_lazergun:ammo_handling
 #---------------function calls end---------------#
 
 
-effect give @a resistance 99999 3 true
+effect give @a resistance 99999 127 true
+effect give @a saturation 99999 127 true
 
 kill @e[type=arrow, nbt={inGround:1b}]
 

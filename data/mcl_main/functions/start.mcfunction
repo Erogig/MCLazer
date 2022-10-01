@@ -2,6 +2,9 @@
 
 data modify storage mcl_main/main enabled set value true
 
+gamerule naturalRegeneration false
+
+
 #---------------Scoreboard declarations start ---------------#
 
 # Crossbow objectives
